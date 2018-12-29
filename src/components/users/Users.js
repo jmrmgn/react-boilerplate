@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import User from './User';
 
 class Users extends Component {
@@ -30,7 +30,7 @@ class Users extends Component {
    render() {
       const { title, users } = this.state;
       return (
-         <div>
+         <Fragment>
             <button onClick={this.makeMeYounger}>Make us 10 years younger</button>
             <h1>{title}</h1>
             {
@@ -42,7 +42,7 @@ class Users extends Component {
                   )
                })
             }
-         </div>
+         </Fragment>
       );
    }
 }
