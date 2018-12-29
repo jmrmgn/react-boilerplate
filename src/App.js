@@ -14,6 +14,7 @@ import ListKey from './components/listkeys/ListKeys'; // List-key
 import Templates from './components/fragments/Templates'; // Fragments
 import LifeCycle from './components/lifecycle-hooks/LifeCycle'; // Lifecycles
 import PureComps from './components/pure-components/PureComps'; // Pure Component
+import PropTypesComp from './components/proptypes/PropTypesComp';
 
 const User = (params) => {
    return (
@@ -62,6 +63,8 @@ class App extends Component {
                      }
                   }
                />
+
+               <PropTypesComp />
 
             </div>
          </Router>
