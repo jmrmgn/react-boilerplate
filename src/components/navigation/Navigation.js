@@ -33,6 +33,12 @@ const Navigation = (props) => {
          <li>
             <NavLink activeClassName="active" exact to="/pure-components">Pure Components</NavLink>
          </li>
+         <li>
+            <NavLink activeClassName="active" exact to="/proptypes">Prop Types</NavLink>
+         </li>
+         <li>
+            <NavLink activeClassName="active" exact to="/memoize">Memoize</NavLink>
+         </li>
          <br/>
          <li>
             <NavLink activeClassName="active" exact to="/name/test">Name test</NavLink>

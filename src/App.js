@@ -14,7 +14,9 @@ import ListKey from './components/listkeys/ListKeys'; // List-key
 import Templates from './components/fragments/Templates'; // Fragments
 import LifeCycle from './components/lifecycle-hooks/LifeCycle'; // Lifecycles
 import PureComps from './components/pure-components/PureComps'; // Pure Component
-import PropTypesComp from './components/proptypes/PropTypesComp';
+import PropTypesComp from './components/proptypes/PropTypesComp'; // Prop-types
+import MemParent from './components/memoize/MemParent';
+
 
 const User = (params) => {
    return (
@@ -53,7 +55,9 @@ class App extends Component {
                <Route path="/fragments" exact strict component={Templates}/>
                <Route path="/lifecycle" exact strict component={LifeCycle}/>
                <Route path="/pure-components" exact strict component={PureComps}/>
+               <Route path="/proptypes" exact strict component={PropTypesComp}/>
 
+               <MemParent />
                <Route path="/name/:username" exact strict 
                   render={
                      ({match}) => {
@@ -63,8 +67,6 @@ class App extends Component {
                      }
                   }
                />
-
-               <PropTypesComp />
 
             </div>
          </Router>
