@@ -39,6 +39,9 @@ const Navigation = (props) => {
          <li>
             <NavLink activeClassName="active" exact to="/memoize">Memoize</NavLink>
          </li>
+         <li>
+            <NavLink activeClassName="active" exact to="/lazy-loading">Lazy Loading</NavLink>
+         </li>
          <br/>
          <li>
             <NavLink activeClassName="active" exact to="/name/test">Name test</NavLink>

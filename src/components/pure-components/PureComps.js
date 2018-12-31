@@ -6,13 +6,13 @@ class PureComps extends PureComponent {
       val: 1
    }
 
-   componentDidMount() {
-      setInterval(() => {
-         this.setState({
-            val: 1
-         });
-      }, 2000);
-   }
+   // componentDidMount() {
+   //    setInterval(() => {
+   //       this.setState({
+   //          val: 1
+   //       });
+   //    }, 2000);
+   // }
 
    // shouldComponentUpdate(nextProps, nextState) {
    //    console.log(`nextState ${nextState}`);
